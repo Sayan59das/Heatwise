@@ -1,0 +1,62 @@
+{
+  "LibreHardwareMonitorLib.dll": {
+    "package": "LibreHardwareMonitorLib",
+    "version": "0.9.6",
+    "sha256": "6ebc194316536ba61af5be24508ad9fcbb2ecc685e716c12e787c79530f66bf0"
+  },
+  "DiskInfoToolkit.dll": {
+    "package": "DiskInfoToolkit",
+    "version": "1.1.2",
+    "sha256": "a062cf51411d268ec364f68466d5c3109cb4ee1975114368311a7d69d29777d7"
+  },
+  "HidSharp.dll": {
+    "package": "HidSharp",
+    "version": "2.6.4",
+    "sha256": "79f2bc8ddff102e6dbede84b2c211a3aea2ed675bf762fa0f02ecb65f61ee812"
+  },
+  "RAMSPDToolkit-NDD.dll": {
+    "package": "RAMSPDToolkit-NDD",
+    "version": "1.4.2",
+    "sha256": "e6ad8b31d432be5b91950755f3cf81daa601fd90a0549698a2803ab830638ff1"
+  },
+  "System.Memory.dll": {
+    "package": "System.Memory",
+    "version": "4.6.3",
+    "sha256": "d5e8e4866f9cfa66f7765660f84b210198893e55335487afe5ebda342c0e913d"
+  },
+  "System.Threading.AccessControl.dll": {
+    "package": "System.Threading.AccessControl",
+    "version": "10.0.3",
+    "sha256": "5e3a3902f04f840c0fc1f9c2f249f804f6cfdf7901b2e06778bc2a4603ae4694"
+  },
+  "BlackSharp.Core.dll": {
+    "package": "BlackSharp.Core",
+    "version": "1.0.7",
+    "sha256": "9bc80efb2e84f8cd5acd36613e8335d02d179ad0205dd5e2665a10c0bf084d3d"
+  },
+  "System.Buffers.dll": {
+    "package": "System.Buffers",
+    "version": "4.6.1",
+    "sha256": "2d78d770c9cb997199154ae8c018b9f1d1efbc86729f7264dde6dbad2a12cac3"
+  },
+  "System.Numerics.Vectors.dll": {
+    "package": "System.Numerics.Vectors",
+    "version": "4.6.1",
+    "sha256": "20c2fa81b8c70d651099d762954f285fd4f942e63b2d7217c145dab8d4b2f4c9"
+  },
+  "System.Runtime.CompilerServices.Unsafe.dll": {
+    "package": "System.Runtime.CompilerServices.Unsafe",
+    "version": "6.1.2",
+    "sha256": "08cbd7278b66f1e68425a82d4b97181a4130d93e3dd91831407aba7212ccdacf"
+  },
+  "System.Security.AccessControl.dll": {
+    "package": "System.Security.AccessControl",
+    "version": "6.0.0",
+    "sha256": "ff14c5f628b9a6798d173aefbba0a43d61e66f715108e2576ac0d3dfab9071d0"
+  },
+  "System.Security.Principal.Windows.dll": {
+    "package": "System.Security.Principal.Windows",
+    "version": "5.0.0",
+    "sha256": "b4d8e15adc235d0e858e39b5133e5d00a4baa8c94f4f39e3b5e791b0f9c0c806"
+  }
+}
