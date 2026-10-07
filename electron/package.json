@@ -1,0 +1,20 @@
+{
+  "name": "thermalsense",
+  "productName": "ThermalSense",
+  "version": "0.1.0",
+  "description": "Background desktop app that finds the root cause of high CPU/GPU temperatures",
+  "main": "main.js",
+  "private": true,
+  "author": "Sayan-Das",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron . --no-elevate",
+    "start:elevated": "electron .",
+    "smoke": "electron . --smoke-test --no-elevate",
+    "test": "node --test test/"
+  },
+  "devDependencies": {
+    "electron": "^44.6.0",
+    "electron-builder": "^26.15.3"
+  }
+}
