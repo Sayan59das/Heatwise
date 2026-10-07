@@ -1,0 +1,44 @@
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+backend/build/
+backend/dist/
+*.spec.bak
+
+# Fetched by backend/scripts/fetch_lhm.py (MPL-2.0 binaries; not vendored in git)
+backend/libs/*.dll
+backend/libs/*.xml
+
+# --- Runtime data ---
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.log
+logs/
+data/
+
+# --- Node / Next.js / Electron ---
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
+*.tsbuildinfo
+electron/dist/
+release/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
