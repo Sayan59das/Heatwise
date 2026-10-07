@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Design tokens. Dark theme only (as specified). Values are the validated dark column of the data-viz
+  reference palette; each token is "R G B" so Tailwind can apply opacity.
+*/
+:root {
+  color-scheme: dark;
+
+  /* surfaces & ink */
+  --background: 13 13 13; /* #0d0d0d page plane */
+  --card: 26 26 25; /* #1a1a19 chart surface */
+  --hover: 36 36 34; /* ghost wash for hover/selection */
+  --ink: 255 255 255; /* primary ink */
+  --ink-2: 195 194 183; /* #c3c2b7 secondary ink */
+  --ink-3: 137 135 129; /* #898781 muted: axis labels, captions */
+  --border: 44 44 42; /* hairline ring on cards */
+  --grid: 44 44 42; /* #2c2c2a chart gridline */
+  --axis: 56 56 53; /* #383835 baseline / axis */
+  --accent: 57 135 229; /* #3987e5 interactive accent */
+
+  /* categorical series, fixed order: never cycled, colour follows the entity */
+  --series-1: 57 135 229; /* blue    #3987e5 */
+  --series-2: 217 89 38; /* orange  #d95926 */
+  --series-3: 25 158 112; /* aqua    #199e70 */
+  --series-4: 201 133 0; /* yellow  #c98500 */
+  --series-5: 213 81 129; /* magenta #d55181 */
+
+  /* status: reserved for meaning, always paired with an icon + label */
+  --good: 12 163 12; /* #0ca30c */
+  --warning: 250 178 25; /* #fab219 */
+  --serious: 236 131 90; /* #ec835a */
+  --critical: 208 59 59; /* #d03b3b */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply bg-background text-foreground antialiased;
+  }
+  body {
+    @apply min-h-screen bg-background font-sans text-foreground;
+  }
+  /* Keyboard focus must be visible everywhere; tooltips and hover states mirror it. */
+  :focus-visible {
+    outline: 2px solid rgb(var(--accent));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  /* Recharts renders SVG text with its own defaults; keep axis text on the muted token. */
+  .recharts-text {
+    fill: rgb(var(--ink-3));
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--axis));
+    border-radius: 8px;
+  }
+}
+
+/* Proportional figures for big standalone numbers; tabular only where numbers align in columns. */
+.num-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Refetch keeps the frame: previous render stays, dimmed. */
+.is-refreshing {
+  opacity: 0.55;
+  transition: opacity 120ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
